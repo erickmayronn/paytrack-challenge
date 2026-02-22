@@ -1,4 +1,4 @@
-export default function validateLegalAge(dob: string): boolean {
+export default function isLegalAge(dob: string): boolean {
   const [year, month, day] = dob.split('-').map(Number);
   const dateOfBirth = new Date(year, month - 1, day);
 
@@ -12,8 +12,6 @@ export default function validateLegalAge(dob: string): boolean {
     today.getMonth(),
     today.getDate(),
   );
-
-  console.log(eighteenYearsAgo);
 
   return dateOfBirth <= eighteenYearsAgo;
 }
