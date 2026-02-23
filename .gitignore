@@ -8,7 +8,7 @@ lerna-debug.log*
 
 # Dependencies
 node_modules/
-/src/generated/prisma
+generated-reports
 
 # Production
 /dist
@@ -26,5 +26,8 @@ node_modules/
 *.local
 *.sublime-project
 *.sublime-workspace
+*.sqlite
+*.sqlite3
+database.sqlite
 
-/generated-reports
+

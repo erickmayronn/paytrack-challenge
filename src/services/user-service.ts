@@ -1,6 +1,6 @@
 import { BaseService } from './base-service';
 import { User, ApiUser } from '../models/user-model';
-import { API_BASE_URL, API_KEY } from '../constants/env';
+import { API_BASE_URL, API_KEY } from '../config/env';
 import { mapApiUserToUser } from '../services/user-mapper';
 import { UserRepository } from '../models/user-repository';
 import isLegalAge from '../utils/age-validator';
@@ -17,7 +17,7 @@ export class UserService extends BaseService {
   }
 
   async getUsers(): Promise<User[]> {
-    const users = await this.get<ApiUser[]>('/randomuser?count=30');
+    const users = await this.get<ApiUser[]>('/randomuser?count=20');
 
     return users.map((user: ApiUser) => mapApiUserToUser(user));
   }
@@ -34,6 +34,7 @@ export class UserService extends BaseService {
       usuarios_ignorados: [],
       errors: [],
     };
+
     try {
       const users: User[] = await this.getUsers();
 
