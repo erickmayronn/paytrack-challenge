@@ -26,3 +26,5 @@ node_modules/
 *.local
 *.sublime-project
 *.sublime-workspace
+
+/generated-reports

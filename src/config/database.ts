@@ -11,14 +11,14 @@ export async function getDatabase(): Promise<Database> {
     });
 
     await db.exec(`
-      CREATE TABLE IF NOT EXISTS users (
+      CREATE TABLE IF NOT EXISTS usuarios (
         email TEXT PRIMARY KEY,
-        gender TEXT NOT NULL,
-        first_name TEXT NOT NULL,
-        last_name TEXT NOT NULL,
-        dob TEXT NOT NULL,
-        cell TEXT NOT NULL,
-        country TEXT NOT NULL
+        sexo TEXT NOT NULL,
+        nome TEXT NOT NULL,
+        sobrenome TEXT NOT NULL,
+        data_nascimento TEXT NOT NULL,
+        celular TEXT NOT NULL,
+        pais TEXT NOT NULL
       )
     `);
   }

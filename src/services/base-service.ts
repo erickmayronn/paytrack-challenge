@@ -6,7 +6,6 @@ export class BaseService {
   constructor(baseURL: string, headersObject?: Record<string, string>) {
     this.api = axios.create({
       baseURL,
-      timeout: 8000,
       headers: {
         'Content-Type': 'application/json',
         ...headersObject,

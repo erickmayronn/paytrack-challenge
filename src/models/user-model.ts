@@ -1,4 +1,12 @@
-import { User } from '../types/user';
+export interface User {
+  email: string;
+  sexo: string;
+  nome: string;
+  sobrenome: string;
+  data_nascimento: string;
+  celular: string;
+  pais: string;
+}
 
 export interface ApiUser {
   id: string;
@@ -45,16 +53,4 @@ export interface ApiUser {
   sha1: string;
   sha256: string;
   locale: string;
-}
-
-export function mapApiUserToUser(apiUser: ApiUser): User {
-  return {
-    email: apiUser.email,
-    gender: apiUser.gender,
-    first_name: apiUser.first_name,
-    last_name: apiUser.last_name,
-    dob: apiUser.dob,
-    cell: apiUser.cell,
-    country: apiUser.country,
-  };
 }
