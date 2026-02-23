@@ -40,14 +40,16 @@ O projeto segue o padrão **MVC**, com clara separação de responsabilidades:
 
 ## 📂 Estrutura do Projeto
 
-generated-reports/ # Relatórios gerados pela aplicação
+```
+generated-reports/       # Relatórios gerados pela aplicação
 src/
-├── config/ # Configurações da aplicação (db, env, etc)
-├── constants/ # Constantes e enums
-├── models/ # Modelos de domínio / entidades
-├── services/ # Regras de negócio e integração externa
-├── utils/ # Funções utilitárias (ex: validação de idade)
-└── views/ # Geração de relatórios
+├── config/              # Configurações da aplicação (db, env, etc)
+├── constants/           # Constantes e enums
+├── models/              # Modelos de domínio / entidades
+├── services/            # Regras de negócio e integração externa
+├── utils/               # Funções utilitárias (ex: validação de idade)
+└── views/               # Geração de relatórios
+```
 
 ---
 
