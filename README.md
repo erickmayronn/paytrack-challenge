@@ -44,7 +44,6 @@ O projeto segue o padrão **MVC**, com clara separação de responsabilidades:
 generated-reports/       # Relatórios gerados pela aplicação
 src/
 ├── config/              # Configurações da aplicação (db, env, etc)
-├── constants/           # Constantes e enums
 ├── models/              # Modelos de domínio / entidades
 ├── services/            # Regras de negócio e integração externa
 ├── utils/               # Funções utilitárias (ex: validação de idade)
@@ -105,11 +104,8 @@ npm start
 ## 🔮 Possíveis Melhorias
 
 - Implementação de testes automatizados (Jest)
-
 - Implementação de logs estruturados
-
 - Dockerização da aplicação
-
 - Tratamento mais robusto de erros externos
 
 ## 📄 Licença
